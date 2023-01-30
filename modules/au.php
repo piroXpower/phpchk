@@ -21,7 +21,7 @@ $cvv = multiexplode(array(":", "/", " ", "|"), $message)[3];
      $listaxz = "$cc|$mes|$ano|$cvv";
   }
      
-     $sendmes = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=".$chatId."&text=<b>HECKER CHK ⚡️ - Status - $sat%0A━━━━━━━━━━━━━%0A[ϟ] CC: ".$listaxz."%0A[ϟ] STATUS: BEING CHECKED,PELASE WAIT.%0A━━━━━━━━━━━━━</b>&reply_to_message_id=".$message_id."&parse_mode=HTML";
+     $sendmes = "https://api.telegram.org/bot$botToken/sendMessage?chat_id=".$chatId."&text=<b>BLAZE CHK ⚡️ - Status - $sat%0A━━━━━━━━━━━━━%0A[ϟ] CC: ".$listaxz."%0A[ϟ] STATUS: BEING CHECKED,PELASE WAIT.%0A━━━━━━━━━━━━━</b>&reply_to_message_id=".$message_id."&parse_mode=HTML";
   
     $sent = json_decode(file_get_contents($sendmes) ,1);
       $mes_id = $sent['result']['message_id'];
@@ -88,7 +88,7 @@ $isbug = $f;
   $binrs = "<b>━━━━━━━━━━━━━%0A[ϟ] BIN: $bin%0A[ϟ] COUNTRY: $country $emoji%0A[ϟ] BRAND: $brand%0A[ϟ] LEVEL: $scheme%0A[ϟ] TYPE: $type%0A[ϟ] BANK: $bank</b>";
 $time_end = microtime(true);
   $execution_time = ($time_end - $time_start);
-  editMessage($chatId, "<b>HECKER CHK ⚡️ - Status - $sat%0A━━━━━━━━━━━━━%0A[ϟ] GATE: STRIPE AUTH%0A[ϟ] CC: <code>$listaxz</code>%0A[ϟ] STATUS: $pass%0A[ϟ] RESPONSE: $msg%0A[ϟ] BUG BIN: $isbug%0A$binrs%0A━━━━━━━━━━━━━%0A[ϟ] TIME TAKEN: $execution_time's%0A[ϟ] Checked By: @$username%0A[ϟ] UserID: $userId%0A[ϟ] Premium Activated: $stat%0A</b>",$mes_id);
+  editMessage($chatId, "<b>BLAZE CHK ⚡️ - Status - $sat%0A━━━━━━━━━━━━━%0A[ϟ] GATE: STRIPE AUTH%0A[ϟ] CC: <code>$listaxz</code>%0A[ϟ] STATUS: $pass%0A[ϟ] RESPONSE: $msg%0A[ϟ] BUG BIN: $isbug%0A$binrs%0A━━━━━━━━━━━━━%0A[ϟ] TIME TAKEN: $execution_time's%0A[ϟ] Checked By: @$username%0A[ϟ] UserID: $userId%0A[ϟ] Premium Activated: $stat%0A</b>",$mes_id);
 }
 
 else {
