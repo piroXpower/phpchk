@@ -82,6 +82,6 @@ $time_end = microtime(true);
 }
 
 else {
-  sendMessage($chatId, "<b>You are not authorized to use this command in here.You can use me in @heckerdrops chat or get authorization.</b>", $message_id);
+  sendMessage($chatId, "<b>You are not authorized to use this command in here.You can use me in @TheDeadlyBots chat or get authorization.</b>", $message_id);
 }
 }
