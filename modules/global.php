@@ -1,5 +1,5 @@
 <?php
-$botToken = "5449842563:AAGgqf0HuPFEuNjIOB_zfUyyk4Wn2gARTVQ"; // Enter ur bot token
+$botToken = "6189386469:AAExpfLaZu4rZq9qnTv-ttcI4LLEPKAIKw0"; // Enter ur bot token
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -18,7 +18,7 @@ $k = 'Premium';
 $f = 'False';
 $z = 'Free';
 $sat = 'PUBLIC RELEASE';
-$botby = 'HECKER';
+$botby = 'BLAZE';
 $pre = file_get_contents('pre.txt');
 $pre = explode("\n", $pre);
 if (in_array($userId, $pre)) {
